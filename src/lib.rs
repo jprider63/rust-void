@@ -24,6 +24,9 @@ mod coreprovider {
 
 use coreprovider::*;
 
+#[cfg(feature = "serde")]
+pub mod serde;
+
 /// The empty type for cases which can't occur.
 #[derive(Copy)]
 pub enum Void {}
